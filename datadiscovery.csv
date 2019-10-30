@@ -1,0 +1,176 @@
+Source Category,Dataset(s) Name,Data Source (Who publishes the data?),Link,Description of Dataset(s),Description of Data Source,"Data Type (Survey, Administrative, Opportunity), Stability, and Transparency",Time Period Coverage,Unit of Coverage,Geographical Coverage,Data Format,Accessibility,"Category (Education, Employment)",Subpopulations and Geographies Coverage & Comparatibility,STW Inclusion,Comparability to National Survey Measures,Linkage to Other Sources,Data Dictionary,Aggregated Data Tools,Potential Use to Stakeholders,Potential Use to General Public,Notes
+NP,Credential Registry,Credential Engine,"
+Credential Finder: https://credentialfinder.com/","""Credential Registry uses open-licensed software to continuously capture, connect, archive and share metadata about credentials, credentialing organizations, quality assurance organizations and competency frameworks and additional metadata as needed to support an open applications marketplace.""","The Credential Engine initially came from the Credential Transparency Initiative and is supported by the Lumina Foundation, JPMorganChase&Co, Walmart Foundation, Microsoft, Northrop Grumman Foundation, ECMC Foundation.","The data type is opportunity. Data is reliant upon organizations registering, and then uploading and updating the data about the credentials they provide. The registry follows a common language which assists the reproducibility of the data.",This data does not appear to have a time period associated with it. ,"In the Credential  Finder,  credential, organization, assessments, learning opportunities, and competency frameworks are all searchable options.","This source covers the United States, but an organization must register and upload credentials",json,"Bulk Download: https://github.com/CredentialEngine/Import_From_Registry/wiki
+
+Search API: https://credreg.net/registry/handbook#consume
+
+Organization must have an account approved to use Registry data.",Education: Credentials,N/A,There are STW credentialing included in the data.,?,It could potentially be linked to other education data sources based on organization name or other credentials by credential title.,"The Credential Transparency Description Language Mapping Guidance:
+https://credreg.net/ctdl/mapping",An aggregated data tool can be found here: https://credentialfinder.org/reports,"Although this source does not give every credentialing opportunity in the US, it provides data about those registered with Credential Registery, as well as a common language to describe credentials.",The Credential Finder tool allows anyone to search for credentials and organizations of interest. The finder tool is user-friendly and open to the general public. ,
+NP,"StudentTracker College
+
+StudentTracker High School
+
+Workforce Credential Coalition",National Student Clearinghouse Research Center,"https://studentclearinghouse.org/about/how-we-serve-the-k-20-to-workforce-continuum/
+
+https://nscresearchcenter.org/","""StudentTracker® is the only nationwide source of college enrollment and degree data. More than 3,600 colleges and universities — enrolling over 99 percent of all students in public and private U.S. institutions — regularly provide enrollment and graduation data to the Clearinghouse. Through StudentTracker, you can query our participating institutions’ student data to perform all types of educational research and analyses — quickly, easily, and affordably.""
+","""The National Student Clearinghouse® Research Center™ is the research arm of the National Student Clearinghouse. The Research Center works with higher education institutions, states, districts, high schools, and educational organizations to better inform practitioners and policymakers about student educational pathways. Through accurate longitudinal data outcomes reporting, the Research Center enables better educational policy decisions, leading to improved student outcomes.""
+
+https://studentpathways.org/","The data type is opportunity, because institutions choose to report their data to National Student Clearinghouse. Their data is from 3600 colleges and universities, theat enroll more than 99% of all students. ","Longitudinal cohorts can be defined (ex. First generation students), and you can track one student over time.
+
+The month and year that each institution joined can be found here for colleges: https://studentclearinghouse.org/colleges/enrollment-reporting/enrollment-reporting-institutions/",student,"This source covers the United States, but an institution must provide National Clearinghouse with data. ",Excel,"
+
+Using the StudentTracker tool, results can be exported to an Excel spreadsheet. 
+
+https://studentclearinghouse.info/onestop/wp-content/uploads/STCU_User_Manual.pdf
+
+Free to participating institutions. Other institutions/organizations will pay a fee. ","Education: Degree Level, Major, Credential","There are data elements to explore subpopulations, such as race, ethnicity, and gender. 
+
+https://nscresearchcenter.org/wp-content/uploads/Reporting_of_NSC_Additional_Data_Elements.pdf","Students could be grouped by if their major is considered an STW major by CIP code. Additionally, the degree level is given, which is helpful for analysis for certificates and associate's degrees only.
+
+Student Clearinghouse also does workforce Credential Verication, however, it is not clear that that information is available or useful.",?,"There is a crosswalk table that connects the StudentTracker School Code with the IPEDS unit IDs. 
+
+There is also a CIP lookup table.
+
+https://nscresearchcenter.org/workingwithourdata/","The documents and tables on this page are the closest documentation to a data dictionary. 
+
+https://nscresearchcenter.org/workingwithourdata/",,"The StudentTracker for High School students combinded with the StudentTracker for College students will potentially show pathways for students. This is useful because it will show the degree level of the student, so those with a bachelor's degree or above could be separated from certificate and associate's degrees. ",N/A,"Article on Industry-Credentials: 
+
+https://studentclearinghouse.org/nscblog/industry-based-credentials-are-part-of-the-education-pathway/"
+,"College-Bound Seniors
+
+College-Bound Juniors & Sophomores
+
+AP, SAT, SAT Subject, and other test Assessments",College Board,"https://research.collegeboard.org/about-us/request-data
+
+https://research.collegeboard.org/programs/sat/data/archived/cb-seniors-2013
+
+https://research.collegeboard.org/programs/sat/data
+
+https://research.collegeboard.org/programs/ap/data","
+""...information such as test scores; test volumes; identification of student names and addresses; identification of the secondary schools that students attend (AI, or attending institution), and the postsecondary institutions that receive scores (DI, or designated institution); and data from the SAT Questionnaire such as the course-taking patterns and extracurricular interests of individual students, as well as demographic information on student family background variables, such as selfreported race/ethnicity, parental education, and family income.""
+
+""The College Board Data and programs include, but are not limited to, the Advanced Placement Program® (AP® ); SAT Program, which includes the SAT and SAT Subject Tests™, and PSAT-related assessments, which include the PSAT™ 8/9, PSAT™ 10, and PSAT/NMSQT® ; the ACCUPLACER® Program, CSS/Financial Aid PROFILE® , and College-Level Examination Program® (CLEP® )""",The College Board is a not-for-profit that provides tests for students to prepare for college.,"The data type depends based on what data is requested. Test score data is adminsitrative, whereas the demographic information is survey data. ",Not specified.,student,United states,not specified,"Data must be requested here, and there may be a fee: https://research.collegeboard.org/about-us/request-data. ",Education: Test Scores,"Students report ethnicity and gender, as well as other socioeconomic variables.
+
+Geographies include personalized aggregations and institution-/district-level.",College-Bound Seniors data reports intended major and degree level.,?,"If individual level can be attained, this could be connected to the National Student Clearinghouse individual level data. 
+
+Anticipated major could be connected to CIP codes.",Data dictionary is not provided on the College Board website.,"Personalized aggregated data can be requested, as well as institution-/district-level data.","This could contribute to educational pathways, by showing test scores, demographic, and socioeconmoic data of students planning on going into specific majors and degree levels (Associate's, certificate).",,
+,Open Skills Data,Data At Work,"http://dataatwork.org/
+
+https://github.com/workforce-data-initiative/skills-api/wiki/API-Overview","""The Open Skills Project is a public-private partnership lead by the University of Chicago focused on providing a dynamic, up-to-date, locally-relevant, and normalized taxonomy of skills and jobs that builds on and expands on the Department of Labor’s O*NET data resources. It’s aim is to improve our understanding of the labor market and reduce frictions in the workforce data ecosystem by enabling a more granular common language of skills among industry, academia, government, and nonprofit organizations.""
+
+""Our Open Skills Project publishes standardized job titles, skills, and training outcomes to provide the foundation of a more open, connected and interoperable workforce data ecosystem.""","Data at Work develops ""datasets, tools, standards, and best practices for publishing data on skills, jobs, and training"".",?,2011Q1 - 2017Q3,job postings,CBSA,json,API: https://github.com/workforce-data-initiative/skills-api/wiki/API-Overview,Employment,,Provides job posting by SOC code.,,Can be linked through SOC code or other sources at CBSA level.,,,,,
+P,indeed,"will need to contact for data
+
+The have a database for resumes:
+
+https://www.indeed.com/hire/resume-search",,"I cannot find where indeed offeres data for workforce research, but we could contact them to request data.",,,,,,,,,,,,,,,,,
+P,linkedin,,"https://engineering.linkedin.com/blog/2018/08/research-updates--economic-graph-research-program-cfp
+
+This might provide useful information for submitting a proposal to use their data. I am not able to find a 2019 call for proposals",,,,,,,,,,,,,,,,,,
+P,burning glass,,,,,,,,,,,,,,,,,,,,
+,Course report,will need to contact for data,"https://www.coursereport.com/resources/research-reports
+
+This data surveys schools
+
+example course listing: https://www.coursereport.com/schools/general-assembly#/courses","""Course Report is the leading authority on immersive technology education, having been cited in the New York Times, the Wall Street Journal, the San Francisco Chronicle, TechCrunch, GeekWire, EdSurge and more. We conduct in-depth research on the industry, track trends in coding education, share student stories, produce a monthly podcast, and host thousands of alumni reviews. Course Report has everything you need to choose the bootcamp that’s right for you.""",self- reported survey. they may have adminstrative data based on reviews.,,,,,,,,,,,,,,,,
+,"Trilogy Ed * is owned by ""2U""",will need to contact for data,"https://www.trilogyed.com/programs/
+
+This has specific skills that could be listed under ""explore the curriculum"", but I cannot find a list of institutions that partner with Trilogy","""Trilogy Education is a Workforce Accelerator. We partner with the best universities in the world to create and manage skills-based training programs. Together, we’re training today’s workers with tomorrow’s skills to help companies bridge the digital skills gap.""
+
+Programs: Data Analytics/Visualization, Web Develpment, UX/UI Design, Cybersecurity, FinTech",,,,,,,,,,,,,,,,,
+,skills fund,,https://skills.fund/resources/reved,"Skillsfund finances students who are enrolled in bootcamps.
+
+Has information on partner schools, with information on lenght of program, cost of program, format (in-person/online/on campus), and program outcomes. The information is in ""Partner Spotlight"" articles: https://skills.fund/resources/best-schools
+
+LIst of schools available here: https://skills.fund/students",,,,,,,,,,,,,,,,,
+,Monster Real-Time Labor Intelligence,Monster Government Solutions,https://www.monstergovernmentsolutions.com/what-we-do/state-and-local/develop/real-time-labor-intel,"Monster Real-Time Labor Intelligence works to speed employment, address skills gaps, reveal in-demand occupations, analyze sectors, and identify career progressions. Real-Time Labor Intelligence:
+
+Provides an understanding of how economies and sectors are changing from a macro to a micro level.
+
+Matches talent to employers, matches skilled candidates with in-demand occupations, and shows where the jobs are.
+
+Aligns academic and training programs with emerging market needs.
+
+Uses data to understand career progressions and the associated changes in skills, certifications, and compensation.",,,,,,,,,,,,,,,,,
+,"Career Builder
+
+TalentStream",Career Builder,"https://hiring.careerbuilder.com/company/arc
+
+
+Supply and Demand
+https://hiring.careerbuilder.com/recruiting-solutions/supply-and-demand
+
+https://hiring-assets.careerbuilder.com/media/attachments/careerbuilder-original-1632.pdf?1451318929","Leveraging CareerBuilder’s proprietary resume and job posting datasets, ideal ARC projects explore research areas of mutual interest and result in the creation of cutting-edge business applications or findings that further our understanding of modern labor markets and talent acquisition best practices. Selected faculty participants have the opportunity to access our industry-level datasets for novel research and visit CareerBuilder campuses to promote their work and further collaborative efforts.  Grants of up to $10,000 (plus travel reimbursements) will be awarded to winning research proposals.
+
+Also has a supply and demand data portal. Shows cadnidates vs job openings, compensation information, and top candidate titles and top job titles.
+
+",proprietary resume and job posting datasets,,,,,,,,,,,,,,,,
+,Talent Neuron,Gartner,https://www.gartner.com/en/human-resources/research/talentneuron,"We gather talent intelligence on key roles by location, occupation and skill set; data on where competitors are hiring and which skills and roles they are seeking; and location intelligence on where to find and hire top talent at the right price.",proprietary datasets,,,,,,,,,,,,,,,,
+,My Skills My Future,US Department of Labor,https://www.myskillsmyfuture.org/,"Extension of CareerOneStop. Current jobs can be searched, and it finds other relevant jobs; compares skills, salaries, training, licensing, and certifications. Can search by zip code and radius",,,,,,,,,,,,,,,,,
+,My Next Move,O*Net,"https://www.mynextmove.org/
+
+Here is an example search:
+https://www.mynextmove.org/profile/summary/29-1141.00","Search of an occupation, that is compatible with O*Net, returns: Knowledge, skills, abilities, personality, and technology, education, and job outlook",,,,,,,,,,,,,,,,,
+,TORQ,will need to contact for data,http://www.torqworks.com/,"TORQ is a web application that empowers job seekers to take on new jobs and career paths using our powerful, unique TORQ algorithm - and gives employers and workforce professionals rock-solid skills validation for their hiring needs. The core TORQ algorithm gives candidates unbiased insights into the paths that their experience, education, and talents can unlock; and gives employers a larger, broader talent pool to help them find just the right fit.",proprietary datasets,,,,,,,,,,,,,,,,
+,,Switchup,https://www.switchup.org/rankings/best-coding-bootcamps,"Founded by a coding bootcamp alumnus in 2014, SwitchUp is a free and comprehensive resource where prospective students can compare top-rated tech bootcamps and programs, read reviews, and get advice on switching to a career in web development, data science, UX/UI design, and more.",,,,,,,,,,,,,,,,,
+,All edx courses,Edx,"https://www.edx.org/course
+
+https://www.edx.org/about/research-pedagogy
+
+https://edx.readthedocs.io/projects/devdata/en/latest/start/index.html
+
+https://github.com/mitodl/edx2bigquery
+
+https://github.com/mitodl/xanalytics/tree/master/data
+
+file:///C:/Users/Sarah%20McDonald/Downloads/LS2017_paper_59.pdf",has information about associated certificates... I am guessing they have some sort of administrative data,,,,,,,,,,,,,,,,,
+,,Class Central,,"Class Central is a listing of online courses. We aggregate courses from many providers to make it easy to find the best courses on almost any subject, wherever they exist. We focus primarily on free (or free to audit) courses from universities, offered through massive open online course (MOOC) platforms. Whatever you are interested in learning, it is more than likely that our catalog includes a course that will meet your needs.",,,,,,,,,,,,,,,,,
+,,HARVARD MOOC 2013,https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/ZZH3UB,,,,,,,,,,,,,,,,,,
+,,Udacity,"https://www.udacity.com/courses/all
+
+","Program catalog let's you search by ""industry skills""",,,,,,,,,,,,,,,,,
+,,Coursera,"https://www.coursera.org/directory/queries?page=11
+
+https://building.coursera.org/developer-program/",,,,,,,,,,,,,,,,,,
+,,ACE National Guide to College Credit for Workforce Training,"http://www2.acenet.edu/credit/?fuseaction=browse.main
+
+https://www.acenet.edu/Documents/ACE-Alternative-Credit-Project-Final-Report.pdf",The American Council on Education's College Credit Recommendation Service (CREDIT) connects workplace learning with colleges and universities by helping adults gain access to academic credit for formal courses and examinations taken outside the traditional classroom.,,,,,,,,,,,,,,,,,
+,Outcomes & Audited Reports,Council on Integrity in Reuslts Reporting,https://cirr.org/data,"Outcomes Report & Audited Reports 
+Graduate employment statistics: Employed In-field, salary 180 days after graduation, most frequent job titles
+
+Six-month time periods, PDFs","CIRR establishes coding school reporting standards. Some of those are: 
+
+1. Advertising and disclosing honestly
+2. Collecting students' intent
+3. Tracking enrollment and graduation
+4. Tracking job outcomes
+5. Reporting students' outcomes
+6. Auditing outcomes data",,,,,,,,,,,,,,,,
+,,Council for the Adult & Experiential Learning,"https://www.cael.org/cbe/publication/meet-students-where-they-are?hsCtaTracking=f7560ca9-84b1-4856-b3a0-b8a320660adc%7C57469e73-c387-4452-892a-36c760233468
+
+https://www.cael.org/cbe/publication/competency-based-programs-us?hsCtaTracking=5036a310-ce8c-472a-be1f-93a09d08a537%7C38351e58-67c1-4c55-a027-f3ad3fd3a4f3",There are no clear data sets but if we access these reports maybe we will find something?,,,,,,,,,,,,,,,,,
+,,Work Cred,https://workcred.org/Programs-and-Services/Research.aspx,"No clear data sets - but some of the research interests listed are: Alignment of Credentials in an Industry, Stacking of Credentials, Mapping of the Credential Landscape",,,,,,,,,,,,,,,,,
+,Standards Education Database,American National Standards Institute,https://www.standardslearn.org/trainingcourse.aspx,"This Standards Education database provides links to the main website, education pages and/or distance learning programs of listed resources. Click on the hyperlink(s) provided to access additional information.",,,,,,,,,,,,,,,,,
+,Open Badges,IMS Global,http://www.imsglobal.org/activity/digital-badges,"Open Badges are information-rich visual records of verifiable achievements earned by recipients. The Open Badges standard describes a method for packaging information about accomplishments, embedding it into portable image files as digital badges, and establishing resources for its validation and verification. In other words, Open Badges contain detailed metadata about achievements such as who earned it, who issued it, the criteria required, and in many cases even the evidence and demonstrations of the relevant skills. The data is all inside!",,,,,,,,,,,,,,,,,
+,,Climb,https://discover.climbcredit.com/compare?route=VALIDATE&utm_source=climb_site&utm_medium=referral&utm_campaign=discover_banner&subRoute=&School=,"There is a ""Compare Programs"" tool that compares partner schools, or you can search by course.",Finances career training programs,,,,,,,,,,,,,,,,
+P,Job Market Report: Historical Data,Glassdoor Data,https://www.glassdoor.com/research/data-sets/job-market-report-historical/,"""The Glassdoor Job Market Report provides a real-time view of job and hiring trends and wage growth in the U.S., including several metro areas, based on millions of online jobs and salaries on Glassdoor. We publish the report monthly with the goal of offering labor market data, trends and analysis to help people make more informed job decisions and to help employers refine recruiting and hiring efforts.""
+
+Provides job openings, median pay, and year over year growth nationally for various job titles, and for select metro areas.","Glassdoor Economic Research shares insights and conducts research on today’s labor market. Our economists and data scientists help job seekers, employers, and the media understand trends in hiring, pay and the broader economy based on Glassdoor’s unique data on job openings, salaries, benefits, company reviews and more.",,,,,,,,,,,,,,,,
+P,Location Inc,Industries and Occupations,https://locationinc.com/data-catalog/,"Has data on: Stock Performance of Industries
+Industries of Residents
+Occupations of Residents
+Military and College Status","""Most of our data is available at these geographic scales: individual address, block group, neighborhood (accessible by street address), zip code, metro, city, state, and United States overall.""
+
+""We build and deliver Big Data about locations. Our SaaS products, analytics and mapping tools power the business intelligence behind risk assessment and management, site selection, market analysis, and real estate investments for the Fortune 500 and beyond. """,,,,,,,,,,,,,,,,
+F,School Attendance Boundary Survey (SABS) ,National Center for Education Statistics (NCES) ,https://nces.ed.gov/programs/edge/SABS,"The Department of Education’s (ED) National Center for Education Statistics (NCES) collects the school attendance boundaries biennially from geographically defined schools districts in the 50 States and the District of Columbia. A school attendance boundary (also referred to as a catchment area) is a geographic area from which the students are eligible to attend a local school. Typically, a local school district (also referred to as a local education agency (LEA)) determines the school attendance boundaries for schools within its district.",The National Center for Education Statistics (NCES) is the primary federal entity for collecting and analyzing data related to education. https://nces.ed.gov/,administrative,2009-2010; 2010-2011; 2013-2014; 2015-2016,high schools,U.S.,shapefiles,download,education,NA,no,no,,https://nces.ed.gov/programs/edge/docs/EDGE_SABS_2015_2016_TECHDOC.pdf,no,"Geographically overlay community, school, and employment indicators","Geographically overlay community, school, and employment indicators",
+F,Quarterly Census of Employment and Wages (QCEW),Bureau of Labor Statistics (BLS),https://www.bls.gov/cew/downloadable-data-files.htm,Quarterly employment and wage data collected by the state. De-identified and aggregated of state wage records.,The Bureau of Labor Statistics is a unit of the United States Department of Labor. It is the principal fact-finding agency for the U.S. government in the broad field of labor economics and statistics and serves as a principal agency of the U.S. Federal Statistical System. https://www.bls.gov/,administrative,1990-2018,employers with full- or part-time employees covered by state and federal unemployment insurance laws ,U.S.,CSV ,download,employment,"geographically (by county, MSA, state, or national levels) and by NAIC industry level (available at 2-, 3-, 4-, 5-, and 6-digit levels).",no,,,yes  https://www.bls.gov/cew/about-data/documentation-guide.htm,yes https://www.bls.gov/cew/additional-resources/open-data/home.htm,,"Geographic distribution of jobs in the local area for workers with a particular level of education, hiring practices of employers with regard to worker demographics in local geographic areas, worker mobility from declining sectors",OnTheMap uses LEHD data
+F,Longitudinal Employer-Household Dynamics (LEHD),Coordinated by U.S. Census Bureau,https://lehd.ces.census.gov/,Partnership project that collects and disseminates LEHD data. It combines state administrative data with federal admistrative and survey data from employers and workers to prove a more complete picture of the labor market.,"The Longitudinal Employer-Household Dynamics (LEHD) program is part of the Center for Economic Studies at the U.S. Census Bureau. The LEHD program produces new, cost effective, public-use information combining federal, state and Census Bureau data on employers and employees under the Local Employment Dynamics (LED) Partnership. State and local authorities increasingly need detailed local information about their economies to make informed decisions. The LED Partnership works to fill critical data gaps and provide indicators needed by state and local authorities.",administrative,,,,,,,,,,,yes   https://lehd.ces.census.gov/data/schema/V4.5.0-draft/lehd_public_use_schema.html,yes,,"Geographic distribution of jobs in the local area for workers with a particular level of education, hiring practices of employers with regard to worker demographics in local geographic areas, worker mobility from declining sectors","OnTheMap uses LEHD data; other LEHD products are QWI, PSEO, and J2J"
+F,Post-Secondary Employment Outcomes (PSEO) (Beta),Coordinated by U.S. Census Bureau and developed under the LEHD program,https://lehd.ces.census.gov/data/pseo_beta.html,"Post-Secondary Employment Outcomes (PSEO) are experimental tabulations developed by the Longitudinal Employer-Household Dynamics (LEHD) program at the U.S. Census Bureau. PSEO data provide earnings and employment outcomes for college and university graduates by degree level, degree major, and post-secondary institution. These statistics are generated by matching university transcript data with a national database of jobs, using state-of-the-art confidentiality protection mechanisms to protect the underlying data. ","The PSEO are made possible through data sharing partnerships between universities, university systems, State Departments of Education, State Labor Market Information offices, and the U.S. Census Bureau. PSEO data are currently only available for post-graduate institutions whose transcript data has been made available to Census Bureau through a data-sharing agreement.",administrative,2001-2015,"college and university graduates (in selected colleges in TX, WI, CO, and MI)",U.S.,"CSV, XLS",download,"education, employment","institution, degree level, NAIC code (2-digit)",no,,"The College Scorecard is a data product released by the U.S. Department of Education beginning in 2013 and focuses on entering cohorts of students and their earnings ten years after initial enrollment, although they report longer-term outcomes as well. The Department of Education produces this product by matching federal financial aid data to IRS tax records. They report the 10th, 25th, 50th, 75th, and 90th percentiles of earnings for students. However, the College Scorecard sample frame is only students who received federal financial aid, and these earnings may not reflect those of the entire population of students from that institution.",yes   https://lehd.ces.census.gov/data/schema/V4.5.0-draft/lehd_public_use_schema.html,yes   https://lehd.ces.census.gov/data/pseo_beta_viz.html,,,
+F,Quarterly Workforce Indicators (QWI),Coordinated by U.S. Census Bureau and developed under the LEHD program,https://lehd.ces.census.gov/data/#qwi,"The QWI are a set of 32 economic indicators including employment, job creation/destruction, wages, hires, and other measures of employment flows. The QWI are reported based on detailed firm characteristics (geography, industry, age, size) and worker demographics (sex, age, education, race, ethnicity) and are available tabulated to national*, state, metropolitan/micropolitan areas, county, and workforce investment areas (WIA). The QWI are unique in their ability to track both firm and worker characteristics over time – enabling analyses such as a longitudinal look at wages by worker sex and age across counties, ranking job creation rates of young firms across NAICS industry groups, and comparing hiring levels by worker race and education levels across a selection of metropolitan areas. LEHD data product.","A wide variety of record sources contribute to the construction of the QWI, including the administrative records
+on employment collected by the states, Social Security data, Federal tax records, and other census and survey
+data: UI, QCEW, BDS, demographic data from the Census and ACS",administrative,1990-2018,workers covered under unemployment insurance,U.S.,CSV,download,employment,"county, MSA, state, or national levels) and by NAIC industry level (available at 2-, 3-, 4-, 5-, and 6-digit levels).",no,,"Additionally, a number of states (including Texas, Colorado, and North Carolina) have released similar tabulations of graduate earnings by matching graduate records to in-state unemployment insurance records. While this match allows them to measure the earnings of graduates that stay within the state, these estimates are biased downwards, as mobility and higher wages are positively correlated.",yes   https://lehd.ces.census.gov/data/schema/latest/lehd_public_use_schema.html,yes  https://qwiexplorer.ces.census.gov/static/explore.html#x=0&g=0,,,
+F,Perkins Data Explorer ,"U.S. Department of Education/Office of Career, Technical, and Adult Education/Perkins Collaborative Resource Network",https://perkins.ed.gov/pims/DataExplorer?,"CTE Participant: Enrollment, Performance, results by state x year x student demographics x education type","Consolidated Annual Report (CAR): Under the Perkins legislation and applicable Department regulations, eligible agencies are required to submit the following reports each year: Narrative performance report pursuant to 2 CFR 200.328 and 34 CFR 76.720; Financial reports pursuant to 2 CFR 200.327 and 34 CFR 76.720; and Performance data reports pursuant to section 113 of the Perkins Act.",administrative,2007-2018,Perkins grant recipients in Career & Technical Education,U.S.,"XLS, PDF",download,education,"state, year, education type, student demographics (gender, race/ethnicity, special populations), CTE 16 career clusters",yes,,,Performance Disctionary https://cte.ed.gov/accountability/core-indicators; Student Definitions  https://s3.amazonaws.com/PCRN/docs/nonregulatory/studentdef.pdf  ,yes  https://perkins.ed.gov/pims/DataExplorer,,,You must request access to the portal:  https://perkins.ed.gov/Account/LogOn?ReturnUrl=%2f
+F,College Navigator,National Center for Education Statistics (NCES)/Department of Education ,https://nces.ed.gov/collegenavigator/,"College Navigator is a free consumer information tool designed to help students, parents, high school counselors, get information about post-secondary information by location, institution type, and degree type. The Navigator provides information on more than 7,000 two- and four-year institutions, as well as career and technical schools.","The National Center for Education Statistics is the part of the United States Department of Education's Institute of Education Sciences that collects, analyzes, and publishes statistics on education and public school district finance information in the United States.",administrative,current,higher education institutions,U.S.,"CSV, XLS",download,education,"state, city, ZIP code, institution type (including 2-year, <2-year), level of award (including certificate, associate's degree) ",education venues,,,no,yes. https://nces.ed.gov/collegenavigator/,,,
+F,Common Core of Data ,Department of Education,https://nces.ed.gov/ccd/ccddata.asp,"The Common Core of Data (CCD) is the Department of Education's primary database on public elementary and secondary education in the United States. CCD is a comprehensive, annual, national database of all public elementary and secondary schools and school districts.","The National Center for Education Statistics is the part of the United States Department of Education's Institute of Education Sciences that collects, analyzes, and publishes statistics on education and public school district finance information in the United States.",administrative,,,U.S.,,,education,,,,,,yes https://nces.ed.gov/ccd/search.asp,,,
+F,"Database of Accredited
+Postsecondary Institutions and Programs (DAPIP)",Department of Education,https://ope.ed.gov/dapip/#/download-data-files,"The Database of Accredited Postsecondary Institutions and Programs contains information reported to the U.S. Department of Education directly by recognized accrediting agencies and state approval agencies. The database reflects additional information as it is received from recognized accrediting agencies and state approval agencies. This reported information is not audited. The U.S. Department of Education cannot, therefore, guarantee that the information contained in the database is accurate, current, or complete. For the most accurate and current information, contact the appropriate agency.","The United States Department of Education, also referred to as the ED for Education Department, is a Cabinet-level department of the United States government. ",administrative,,post-secondary institutions,U.S.,"CSV, XLS",download,education,,,,,,,,,
