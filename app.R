@@ -37,36 +37,76 @@ loadData <- function() {
 
 # Define the fields we want to save from the form
 fields <- c("Source Category", "used_shiny", "r_num_years")
-fields <- c("Source Category","Dataset(s) Name",	"Data Source (Who publishes the data?)",	"Link",	"Description of Dataset(s)",	"Description of Data Source",	"Data Type (Survey, Administrative, Opportunity), Stability, and Transparency",	"Time Period Coverage",	"Unit of Coverage",	"Geographical Coverage",	"Data Format",	"Accessibility",	"Category (Education, Employment)",	"Subpopulations and Geographies Coverage & Comparatibility",	"STW Inclusion",	"Comparability to National Survey Measures",	"Linkage to Other Sources",	"Data Dictionary",	"Aggregated Data Tools",	"Potential Use to Stakeholders",	"Potential Use to General Public",	"Notes")
+fields <-
+  c(
+    "Source Category",
+    "Dataset(s) Name",
+    "Data Source (Who publishes the data?)",
+    "Link",
+    "Description of Dataset(s)",
+    "Description of Data Source",
+    "Data Type (Survey, Administrative, Opportunity), Stability, and Transparency",
+    "Time Period Coverage",
+    "Unit of Coverage",
+    "Geographical Coverage",
+    "Data Format",
+    "Accessibility",
+    "Category (Education, Employment)",
+    "Subpopulations and Geographies Coverage & Comparatibility",
+    "STW Inclusion",
+    "Comparability to National Survey Measures",
+    "Linkage to Other Sources",
+    "Data Dictionary",
+    "Aggregated Data Tools",
+    "Potential Use to Stakeholders",
+    "Potential Use to General Public",
+    "Notes"
+  )
 # Shiny app with 3 fields that the user can submit data for
 shinyApp(
+  
   ui = fluidPage(
-    DT::dataTableOutput("sources_data", width = 300), tags$hr(),
-    textInput("Source Category", "Source Category", ""),
-    textInput("Dataset(s) Name", "Dataset(s) Name", ""),
-    textInput("Data Source (Who publishes the data?)","Data Source (Who publishes the data?)", ""),
-    textInput("Link", "Link", ""),
-    textInput("Description of Dataset(s)","Description of Dataset(s)", ""),
-    textInput("Description of Data Source", "Description of Data Source", ""),
-    textInput("Data Type (Survey, Administrative, Opportunity), Stability, and Transparency","Data Type (Survey, Administrative, Opportunity), Stability, and Transparency", ""),
-    textInput("Time Period Coverage", "Time Period Coverage", ""),
-    textInput("Unit of Coverage", "Unit of Coverage", ""),
-    textInput("Geographical Coverage", "Geographical Coverage", ""),
-    textInput("Data Format	Accessibility", "Data Format	Accessibility", ""),
-    textInput("Category (Education, Employment)", "Category (Education, Employment)", ""),
-    textInput("Subpopulations and Geographies Coverage & Comparatibility", "Subpopulations and Geographies Coverage & Comparatibility", ""),
-    textInput("STW Inclusion", "STW Inclusion", ""),
-    textInput("Comparability to National Survey Measures", "Comparability to National Survey Measures", ""),
-    textInput("Linkage to Other Sources", "Linkage to Other Sources", ""),
-    textInput("Data Dictionary	Aggregated Data Tools", "Data Dictionary	Aggregated Data Tools", ""),
-    textInput("Potential Use to Stakeholders", "Potential Use to Stakeholders", ""),
-    textInput("Potential Use to General Public", "Potential Use to General Public", ""),
-    textInput("Notes", "Notes", ""),
-    #checkboxInput("used_shiny", "I've built a Shiny app in R before", FALSE),
-    #sliderInput("r_num_years", "Number of years using R",
-    #           0, 25, 2, ticks = FALSE),
-    actionButton("submit", "Submit")
+    
+    mainPanel(
+      
+      # Output: Tabset w/ plot, summary, and table ----
+      tabsetPanel(type = "tabs",
+                  tabPanel("Sources", DT::dataTableOutput("sources_data", width = 300)),
+                  tabPanel("New Entry", 
+                           textInput("Source Category", "Source Category", ""),
+                           textInput("Dataset(s) Name", "Dataset(s) Name", ""),
+                           textInput("Data Source (Who publishes the data?)","Data Source (Who publishes the data?)", ""),
+                           textInput("Link", "Link", ""),
+                           textInput("Description of Dataset(s)","Description of Dataset(s)", ""),
+                           textInput("Description of Data Source", "Description of Data Source", ""),
+                           textInput("Data Type (Survey, Administrative, Opportunity), Stability, and Transparency",
+                                     "Data Type (Survey, Administrative, Opportunity), Stability, and Transparency", ""),
+                           textInput("Time Period Coverage", "Time Period Coverage", ""),
+                           textInput("Unit of Coverage", "Unit of Coverage", ""),
+                           textInput("Geographical Coverage", "Geographical Coverage", ""),
+                           textInput("Data Format	Accessibility", "Data Format	Accessibility", ""),
+                           textInput("Category (Education, Employment)", "Category (Education, Employment)", ""),
+                           textInput("Subpopulations and Geographies Coverage & Comparatibility", "Subpopulations and Geographies Coverage & Comparatibility", ""),
+                           textInput("STW Inclusion", "STW Inclusion", ""),
+                           textInput("Comparability to National Survey Measures", "Comparability to National Survey Measures", ""),
+                           textInput("Linkage to Other Sources", "Linkage to Other Sources", ""),
+                           textInput("Data Dictionary	Aggregated Data Tools", "Data Dictionary	Aggregated Data Tools", ""),
+                           textInput("Potential Use to Stakeholders", "Potential Use to Stakeholders", ""),
+                           textInput("Potential Use to General Public", "Potential Use to General Public", ""),
+                           textInput("Notes", "Notes", ""),
+                           #checkboxInput("used_shiny", "I've built a Shiny app in R before", FALSE),
+                           #sliderInput("r_num_years", "Number of years using R",
+                           #           0, 25, 2, ticks = FALSE),
+                           actionButton("submit", "Submit")
+                           ),
+                  tabPanel("Some Table", tableOutput("table"))
+      )
+      
+    )
+    
+    
   ),
+  
   server = function(input, output, session) {
     if (!file.exists("data_sources.RDS")) {
       get_sources = function() {
